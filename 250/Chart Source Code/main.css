@@ -1,0 +1,288 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "Sans-serif";
+    -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    justify-content: space-between;
+    padding: 20px; 
+    z-index: 9000;
+   
+}
+
+.navbar a {
+    text-decoration: none;
+}
+.navbar .logo a {
+   
+    color:gold;
+}
+
+.navbar .logo a:hover {
+    color: white;
+   
+}
+.main-content {
+    position: relative;
+    background-color: #FF6384;
+    height: 75vh;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.beans{
+    width:400px;height:400px;
+}
+.navbar .nav-links li a {
+    color: white;
+}
+.nav-links {
+    
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;;
+    align-items: center;
+}
+
+.navbar .nav-links li a:hover {
+    color: rgb(228, 105, 74);
+}
+
+.side{
+    position:absolute;
+    left: -25%;
+    top: 5%;
+}
+
+.left{
+    position:absolute;
+    right: -8%;
+    top: -18%;
+}
+
+.up{
+    position:absolute;
+    left: 5%;
+    top: -19%;
+
+}
+.down{
+    position:absolute;  
+    top: 60%;
+}
+
+.key {
+    max-width:40%;
+    text-align: center;
+}
+.wow{
+    padding:10px;
+}
+
+.trend{
+    background-color: #1c1c1c;
+    color: white;
+    padding: 10px;
+    width: 80%;
+    position: absolute;
+    top: -2%;
+    left: 10%;
+    border-radius: 5px;
+    padding: 20px 10px;
+
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.footer p{
+    color: whitesmoke;
+    margin: 12px auto;
+    
+}
+
+.next{
+    height: auto;
+    background-color: rgb(253, 249, 249);
+    padding: 15px;
+    margin-top:12%;
+    display:flex;
+    flex-direction: row;
+
+}
+.events{
+    background-color: #1c1c1c;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px;
+    line-height: 1.5em;
+    
+}
+.events p a {
+  text-decoration: none;
+  list-style: none;
+  color: #999;
+}
+
+.events p a:hover {
+    color: gold;
+  }
+
+  .footer p a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .inside img {
+    width: 300px;
+    height: 250px;
+  }
+.inside{
+color: white;
+width: 330px;
+border-radius: 10px;
+background-color: #1c1c1c;
+height: auto;
+margin: 20px 20px 0 20px;
+padding: 10px;
+text-align: center;
+line-height: 1.8;
+display: flex;
+flex-direction: column;
+justify-content:space-around;
+}
+
+.beans{
+    width:400px;height:400px;
+}
+.kay{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    
+}
+@media (max-width: 1200px) {
+  
+.side{
+    position:absolute;
+    left: -55%;
+    top: 5%;
+}
+
+.left{
+    position:absolute;
+    right: -15%;
+    top: -25%;
+}
+
+.up{
+    position:absolute;
+    left: 15%;
+    top: -15%;
+
+}
+.down{
+    position:absolute;  
+    top: 60%;
+}
+
+  .key {
+    max-width:60%;
+  }
+
+}
+
+
+@media (max-width: 991px) {
+    .des {
+        display: none;
+       
+      }
+
+      .beans{
+        margin-top:30px;
+        width:350px;height:auto;
+      }
+    .next{
+        margin-top: 150px;
+        flex-direction: row;
+      
+    }
+    .navbar .nav-links{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .events{
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px;
+        line-height: 1.5em;
+    }
+
+    .final {
+        padding: 30px
+    }
+
+    .kay{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        flex-wrap: wrap;
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+
+    }
+    .navbar .logo {
+   text-align: center;
+    }
+    .wow{
+        padding:5px;
+        font-size: 20px;
+    }
+
+}
+@media (max-width: 768px) {
+  
+    .beans{
+        margin-top:30px;
+        width:300px;height:auto;
+      }
+    .next{
+        margin-top: 200px;
+        flex-direction: column;
+      
+    }
+}

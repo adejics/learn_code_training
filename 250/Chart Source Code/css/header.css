@@ -1,0 +1,285 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+
+}
+
+/*CSS FOR THE HEADER: LINE 8-179*/
+
+
+.new {
+    text-align:center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    gap:20px;
+    padding:10px;
+    justify-content:space-around;
+}
+
+.inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
+    width: 100%;
+    z-index: 10;
+    background-color: #1c1c1c;
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+}
+
+header .logo {
+    position: relative;
+    font-size: 1.5em;
+    color: rgb(245, 105, 105);
+    text-decoration: none;
+    font-weight: 900;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+header .logo:hover { 
+    text-decoration: none;
+}
+
+
+header {
+    background-color: #060633;
+}
+header .navigation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+header .navigation li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+header .navigation li a {
+    color: rgb(243, 178, 178);
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+header .navigation li a:hover {
+    color: #ffeb3b;
+}
+
+header .search {
+    position: relative;
+    width: 300px;
+    height: 40px;
+}
+
+header .search input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background: transparent;
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 0 10px 0 45px;
+}
+
+header .search input::placeholder {
+    color: #fff;
+}
+ header .search .fa-search {
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     left: 10px;
+     color: #fff;
+     border-right: 1px solid #fff;
+     padding-right: 10px;
+ }
+
+ /*CSS FOR HOME PAGE*/
+ .banner {
+     background: #f7e0bf;
+     padding: 200px 100px 100px;
+     min-height: auto;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .banner .content {
+    max-width: 700px;
+ }
+
+ .banner .content h2{
+    font-size: 3em;
+    color: rgb(65, 6, 6);
+   
+ }
+
+ .banner .content p{
+    font-size: 1em;
+    color: rgb(44, 3, 3);
+ }
+
+ .banner .content a{
+    display: inline-block;
+    background-color: rgb(6, 3, 34);
+    color: #e6e7ec;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-weight:600;
+    margin-top: 5px;
+ }
+
+ .banner .content a:hover{
+    background-color: #f8d4c9;
+    color: rgb(80, 8, 8);
+}
+
+ .banner .image {
+     max-width: 400px;
+     margin-left: 50px;
+ }
+
+@media (max-width: 991px) {
+
+    .banner .content p{
+        font-size: 1em;
+        color: rgb(44, 3, 3);
+     }
+    .inner {
+        padding: 10px 20px;
+        flex-direction: column;
+        font: size 14px;
+        padding: 5px 5px;
+    }
+
+    .banner {
+        padding: 150px 20px 50px;
+        flex-direction: column-reverse;
+    }
+
+
+.banner .image {
+    max-width: 400px;
+    margin-left: 80px;
+    margin-top: 40px;
+}
+
+.banner .content h2{
+    font-size: 2.5em;
+    color: rgb(63, 7, 7);
+ }
+ header .search {
+    width: 80%;
+  }
+
+  .new {
+    margin-top: 0px;
+    padding: 10px 20px; 
+    flex-direction: column;
+     display: flex;
+     justify-content: space-between;
+        
+   }
+}
+
+@media (max-width: 330px) {
+
+    .banner .content p{
+        font-size: 1em;
+        color: rgb(44, 3, 3);
+     }
+    .inner {
+        padding: 10px 20px;
+        flex-direction: column;
+     
+    }
+
+    .banner {
+        padding: 150px 20px 50px;
+        flex-direction: column-reverse;
+    }
+
+    .banner .image {
+        max-width: 200px;
+        margin-left: 80px;
+        margin-top: 40px;
+    }
+
+    .banner .content h2{
+        font-size: 2.5em;
+        color: rgb(31, 8, 8);
+    }
+
+    .new {
+        margin-top: 0px;
+        padding: 10px 20px; 
+        flex-direction: column;
+         display: flex;
+         justify-content: space-between;
+            
+       }
+   
+}
+
+.pic {
+    width: 100%;
+    height: 20em;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    
+    
+    }
+    
+    .single {
+    overflow: hidden;
+    margin-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #f2f2f2;
+    color: black;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+    border: 1px solid #04AA6D;
+    }
+    
+    img:hover {
+    
+    animation: up-down 1s ease-in forwards alternate;
+    }
+    @keyframes up-down {
+    50%{
+        transform: scale(1.03);
+       
+        
+    }
+    
+    100% {
+        transform: scale(1);
+    }
+    }
+    .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: space-around;
+    
+    }
